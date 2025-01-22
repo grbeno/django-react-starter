@@ -5,7 +5,7 @@
 `Python` `Node` `Postgres` 
 
 **Backend:** Django
-- :white_check_mark: Custom user model initialized
+- :white_check_mark: Custom user model
 
 **Frontend:** ReactJS served as static files
 - :white_check_mark: Vite
