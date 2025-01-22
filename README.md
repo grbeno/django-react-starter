@@ -14,7 +14,7 @@
 - psycopg2-binary
 - dj-database-url
 
-You have to install PostgreSQL on your device and create a database before setting up the DATABASE_URL variable. :heavy_exclamation_mark:
+:heavy_exclamation_mark: You have to install PostgreSQL on your device and create a database before setting up the `DATABASE_URL` variable.
 
 **Environment Variables:**
 - `SECRET_KEY=<add yours>`
