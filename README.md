@@ -1,7 +1,7 @@
 ### Django Web Applaction using ReactJS as the frontend (Template)
 ---
 
-### Prerequisites:
+**Prerequisites:**
 `Python` `Node` `Postgres` 
 
 :bulb: **Backend:** Django
