@@ -14,7 +14,7 @@
 - psycopg2-binary
 - dj-database-url
 
-:heavy_exclamation_mark: You have to install PostgreSQL on your device and create a database before setting up the `DATABASE_URL` variable.
+:heavy_exclamation_mark: If you don't want to use the Docker image for running the application, then you have to install PostgreSQL on your device and create a database before setting up the `DATABASE_URL` variable.
 
 :bulb: **Environment Variables:**
 - `SECRET_KEY=<add yours>`
