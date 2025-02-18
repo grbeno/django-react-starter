@@ -1,0 +1,22 @@
+# Python specific
+**/__pycache__
+**/*.pyc
+
+db.sqlite3
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+
+# Git
+.git
+.gitignore
+
+# Project specific
+README.md
+
+# Frontend
+# Using static files in backend
+
+frontend/
