@@ -28,14 +28,33 @@
 - Setting up the database if needed, as mentioned above
 - Creating `.env` file and adding the variables listed above
 - Migrating the data in the case of Docker:
-    
-    `docker compose run --rm app python manage.py makemigrations accounts`
-    
-    `docker compose run --rm app python manage.py migrate` 
-
+    ```
+    docker compose run --rm app python manage.py makemigrations accounts
+    ```
+    ```
+    docker compose run --rm app python manage.py migrate
+    ```
 - Migrating the data in the case of local Postgres database:
-
-    `python manage.py makemigrations accounts`
+    ```
+    python manage.py makemigrations accounts
+    ```
+    ```
+    python manage.py migrate
+    ```
+- Run with Docker:
+    ```
+    docker build -t app .
+    ```
+    ```
+    docker-compose build
+    ```
+    ```
+    docker-compose up
+    ```
     
-    `python manage.py migrate`
+On the web browser: localhost:8000 / 127.0.0.1:8000
+    
+
+    
+    
 
