@@ -35,6 +35,7 @@
     docker compose run --rm app python manage.py migrate
     ```
 - Migrating the data in the case of local Postgres database:
+  
     ```
     python manage.py makemigrations accounts
     ```
@@ -42,6 +43,7 @@
     python manage.py migrate
     ```
 - Run with Docker:
+  
     ```
     docker build -t app .
     ```
@@ -52,7 +54,7 @@
     docker-compose up
     ```
     
-On the web browser: localhost:8000 / 127.0.0.1:8000
+On the web browser: **localhost:8000** / **127.0.0.1:8000**
     
 
     
