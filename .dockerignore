@@ -8,15 +8,21 @@ db.sqlite3
 venv/
 .venv/
 ENV/
+.env
 
 # Git
 .git
 .gitignore
-
-# Project specific
 README.md
+
+# Ignore Docker-related files
+Dockerfile*
+docker-compose*
+.dockerignore
 
 # Frontend
 # Using static files in backend
 
-frontend/
+frontend/node_modules/
+frontend/build/
+frontend/dist/

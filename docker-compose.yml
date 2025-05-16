@@ -2,18 +2,20 @@ services:
   backend:
     build: .
     container_name: app
-    command: python manage.py runserver 0.0.0.0:8000
-    volumes:
-    - .:/code
+    command: >
+      sh -c "
+      python manage.py collectstatic --noinput &&
+      python manage.py runserver 0.0.0.0:8000
+      "
     ports:
     - 8000:8000
     depends_on:
     - db
+    env_file:
+    - .env
     environment:
-    - "SECRET_KEY=${SECRET_KEY}" # .env
-    - "DEBUG=True"
     - "DATABASE_URL=postgres://postgres:postgres@db:5432/postgres"
-    - "SSL_REQUIRED=False"
+
   db:
     image: postgres:16.2
     container_name: app_db

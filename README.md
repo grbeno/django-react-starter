@@ -18,8 +18,9 @@
 
 :bulb: **Environment Variables:**
 - `SECRET_KEY=<add yours>`
-- `DATABASE_URL=postgresql://postgres:<password>@localhost:5432/<db_name>`* _if local database is created_
 - `SSL_REQUIRE=False`
+If local (outside Docker) database is created
+- `DATABASE_URL=postgresql://postgres:<password>@localhost:5432/<db_name>`
 
 :pushpin: **Starting development**
 
@@ -48,10 +49,7 @@
     docker build -t app .
     ```
     ```
-    docker-compose build
-    ```
-    ```
-    docker-compose up
+    docker-compose -f docker-compose.yml up --build
     ```
     
 On the web browser: **localhost:8000** / **127.0.0.1:8000**
