@@ -19,8 +19,7 @@
 :bulb: **Environment Variables:**
 - `SECRET_KEY=<add yours>`
 - `SSL_REQUIRE=False`
-If local (outside Docker) database is created
-- `DATABASE_URL=postgresql://postgres:<password>@localhost:5432/<db_name>`
+- `DATABASE_URL=postgresql://postgres:<password>@localhost:5432/<db_name>` * _If local (outside Docker) database is created_
 
 :pushpin: **Starting development**
 
@@ -28,6 +27,7 @@ If local (outside Docker) database is created
 - Installing dependencies: `pip install -r requirements.txt`
 - Setting up the database if needed, as mentioned above
 - Creating `.env` file and adding the variables listed above
+- Building React: `cd frontend` `npm run build`
 - Migrating the data in the case of Docker:
     ```
     docker compose run --rm app python manage.py makemigrations accounts
@@ -54,7 +54,3 @@ If local (outside Docker) database is created
     
 On the web browser: **localhost:8000** / **127.0.0.1:8000**
     
-
-    
-    
-
