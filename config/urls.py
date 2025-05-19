@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.urls import path, re_path
-from app.views import React
+from backend.views import React
 
 urlpatterns = [
     path('admin/', admin.site.urls),
